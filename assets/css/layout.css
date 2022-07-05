@@ -1,0 +1,166 @@
+@import './reset.css';
+@import './common.css';
+
+
+.header{}
+.header .group-flex1{
+    position: relative;
+    width: 1130px;
+    height: 160px;
+    margin: 0 auto;
+}
+.header .logo-area{
+    position: absolute;
+    top: 50%;
+    left: -9px;
+    margin-top: -32px;
+}
+.header .logo-area .logo{}
+.header .logo-area .link-logo{
+    display: block;
+}
+.header .logo-area .link-logo::after{
+    content: '';
+    display: block;
+    width: 222px;
+    height: 52px;
+    background-position: 0 -158px;
+}
+.header .search-area{
+    position: absolute;
+    top: 50%;
+    left: 238px; 
+    /* -30px */
+    margin-top: -28px;
+}
+.header .search-area .wrap{
+    position: relative;
+    width: 582px;
+    height: 52px;
+    border: 2px solid #19ce60;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+}
+.header .search-area .input-text{
+    width: 444px;
+    height: 24px;
+    padding: 13px 15px;
+    margin: 1px;
+    background-color: #fff;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000;
+    font-weight: 700;
+    outline: 0;
+}
+.header .search-area .btn-submit{
+    position: absolute;
+    top: -2px;
+    right: 0;
+    width: 56px;
+    height: 56px;
+    background-color: #19ce60;
+}
+.header .search-area .btn-submit::after{
+    content: '';
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+    vertical-align: top;
+    background-position: -420px 0;
+    
+}
+.header .service-area{
+    position: absolute;
+    top: 12px;
+    right: 27px;
+}
+.header .service-area .bar{
+    float: left;
+    width: 1px;
+    height: 10px;
+    margin: 3px 7px;
+    background-color: #ccc;
+}
+.header .service-area .link-start{
+    float: left;
+}
+.header .service-area .link-start::after{
+    content: '';
+    display: inline-block;
+    vertical-align: top;
+    width: 26px;
+    height: 26px;
+    margin: -3px 0 0 3px;
+    background-position: -308px -345px;
+}
+.header .service-area .link-junior{
+    float: left;
+}
+.header .service-area .link-junior::after{
+    content: '';
+    display: inline-block;
+    width: 60px;
+    height: 10px;
+    background-position: -262px -330px;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    margin: 3px;
+}
+.header .service-area .link-bin{
+    float: left;
+}
+.header .service-area .link-bin::after{
+    content: '';
+    display: inline-block;
+    width: 34px;
+    height: 11px;
+    background-position: -369px -299px;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    margin: 3px 3px 2px;
+}
+
+
+
+.header .group-flex2{
+    border-top: 1px solid #e4e8eb;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 12%);
+}
+
+.header .group-flex2 .inner{
+    width: 1130px;
+    margin: 0 auto;
+}
+.header .group-flex2 .inner::after{content: '';clear: both;display: block;}
+.header .gnb-area{
+    float: left;
+    padding: 11px 0;
+}
+.header .gnb-area .gnb-list{
+    line-height: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #19ce60;
+}
+.header .gnb-area .gnb-item{
+    float: left;
+}
+.header .gnb-area .gnb-item + .gnb-item{
+    margin-left: 12px;
+}
+.header .gnb-area .link-gnb{}
+
+.header .weather-area{
+    float: right;
+}
+
+
+
+.container{
+    width: 1130px;
+    margin: 0 auto;
+    padding: 20px 30px;
+}
+.container::after{content: '';clear: both;display: block;} 
+/* commend shift 1 */

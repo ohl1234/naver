@@ -1,0 +1,50 @@
+body{
+    /* min-width: 1190px; */
+    font-size: 12px;
+    line-height: 16px;
+    color: #202020;
+    font-family: -apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif;
+}
+/* command option c */
+
+.blind{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    clip: rect(0,0,0,0);
+    overflow: hidden;
+    margin: -1px;
+}
+
+/* img border */
+.thumb-bd{
+    display: block;
+    position: relative;
+}
+.thumb-bd img{
+    width: 100%;
+}
+.thumb-bd::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid rgba(0,0,0,.1);
+}
+
+
+
+/* 창고 공용 */
+.header .logo-area .link-logo::after,
+.header .search-area .btn-submit::after,
+.header .service-area a::after,
+.sc-news .group-issue .link-media::after,
+.sc-news .group-title .link-set::after,
+.sc-login .link-login::before,
+.sc-cardnews .btn-nav::after{
+    background-image: url(../images/sp-bg.png);
+    background-repeat: no-repeat;
+    background-size: 457px;
+}
