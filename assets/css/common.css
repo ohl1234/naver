@@ -40,9 +40,22 @@ body{
 .header .logo-area .link-logo::after,
 .header .search-area .btn-submit::after,
 .header .service-area a::after,
+.header .gnb-area .ic-tv::before,
+.header .gnb-area .ic-mail::before,
+.header .gnb-area .link-gnb.shop::before,
+.header .gnb-area .link-gnb.shoplive::before,
+.header .gnb-area .btn-more::after,
+.header .weather-wrap::before,
+.header .degree-box .max::before,
 .sc-news .group-issue .link-media::after,
+.sc-news .group-title .link-title::before,
+.sc-news .group-title .link-title::after,
 .sc-news .group-title .link-set::after,
+.sc-news .pm-btn::after,
 .sc-login .link-login::before,
+.sc-login .sub-area .look-wrap::before,
+.sc-login .sub-area .link-id::before,
+.sc-login .sub-area .link-join::before,
 .sc-cardnews .btn-nav::after{
     background-image: url(../images/sp-bg.png);
     background-repeat: no-repeat;

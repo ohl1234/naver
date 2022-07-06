@@ -107,6 +107,9 @@
     vertical-align: top;
     margin: 3px;
 }
+.header .service-area .link-junior:hover::after{
+    background-position: -200px -330px;
+}
 .header .service-area .link-bin{
     float: left;
 }
@@ -120,7 +123,9 @@
     vertical-align: top;
     margin: 3px 3px 2px;
 }
-
+.header .service-area .link-junior:hover::after{
+    background-position: -200px -330px;
+}
 
 
 .header .group-flex2{
@@ -137,7 +142,10 @@
     float: left;
     padding: 11px 0;
 }
-.header .gnb-area .gnb-list{
+
+/* gnb-list1 */
+.header .gnb-area .gnb-list1{
+    float: left;
     line-height: 30px;
     font-size: 15px;
     font-weight: bold;
@@ -150,9 +158,141 @@
     margin-left: 12px;
 }
 .header .gnb-area .link-gnb{}
+.header .gnb-area .ic-mail::before{
+    content: '';
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    background-position: -420px -73px;
+    vertical-align: top;
+    margin: 3px 9px 0 0;
+}
+.header .gnb-area .ic-tv::before{
+    content: '';
+    display: inline-block;
+    width: 12px;
+    height: 14px;
+    background-position: -444px -49px;
+    vertical-align: top;
+    margin: 9px 2px 0 0;
+
+}
+.header .gnb-area .link-gnb.shop::before{
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 20px;  
+    vertical-align: -5px;
+    background-position: -154px -389px;
+}
+.header .gnb-area .link-gnb.shoplive::before{
+    content: '';
+    display: inline-block;
+    width: 54px;
+    height: 20px;
+    vertical-align: -5px;
+    background-position: -202px -299px;
+}
+
+/* gnb-list2 */
+.header .gnb-area .gnb-list2{
+    float: left;
+    margin-left: 12px;
+    line-height: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #000;
+}
+.header .gnb-area .btn-more{
+    float: left;
+    margin-left: 17px;
+    font-size: 13px;
+    line-height: 30px;
+    color: #202020;
+}
+.header .gnb-area .btn-more:hover{
+    text-decoration: underline;
+}
+.header .gnb-area .btn-more::after{
+    display: inline-block;
+    width: 11px;
+    height: 7px;
+    background-position: -444px -339px;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    content: '';
+    margin-left: 7px;
+    vertical-align: 2px;
+}
 
 .header .weather-area{
     float: right;
+}
+.header .weather-wrap{
+    overflow: hidden;
+    display: inline-block;
+    max-width: 100%;
+    padding: 12px 0 11px;
+    font-size: 13px;
+    line-height: 29px;
+    vertical-align: top;
+}
+.header .weather-wrap::before{
+    content: '';
+    float: left;
+    margin-right: 9px;
+    display: inline-block;
+    width: 29px;
+    height: 29px;
+    background-image: url(../images/sp-weather-bg.png);
+    background-size: 215px 185px;
+    background-position: 0 -63px;
+}
+.header .current-box{
+    float: left;
+}
+.header .current-box strong{
+    color: #202020;
+    font-weight: bold;
+}
+.header .current-box .current{
+    font-size: 15px;
+    vertical-align: top;
+}
+.header .current-box .state{
+    margin-left: 5px;
+}
+.header .degree-box{
+    float: left;
+    margin-left: 9px;
+}
+.header .degree-box span{}
+.header .degree-box .min{
+    color: #2586ee;
+}
+.header .degree-box .max{
+    color: #e9564a;
+}
+.header .degree-box .max::before{
+    display: inline-block;
+    width: 5px;
+    height: 11px;
+    background-position: -444px -392px;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    content: '';
+    margin: 0 3px;
+    vertical-align: -1px;
+}
+.header .location{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+    padding-left: 9px;
+    font-size: 12px;
+    color: grey;
+    text-align: right;
 }
 
 
@@ -161,6 +301,7 @@
     width: 1130px;
     margin: 0 auto;
     padding: 20px 30px;
+    letter-spacing: -.2px;
 }
 .container::after{content: '';clear: both;display: block;} 
 /* commend shift 1 */

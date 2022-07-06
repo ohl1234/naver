@@ -35,7 +35,9 @@
     background-position: -444px -380px;
     margin: 0 5px;
 }
-.sc-news .group-issue .link-issue{}
+.sc-news .group-issue .link-issue:hover{
+    text-decoration: underline;
+}
 
 .sc-news .group-issue .direct-area{
     float: right;
@@ -69,13 +71,51 @@
 .sc-news .group-title::after{content: '';clear: both;display: block;}
 .sc-news .group-title .link-title{
     float: left;
+    font-weight: bold;
+    color: #000;
+}
+.sc-news .group-title .link-title::before{
+    content: '';
+    display: inline-block;
+    width: 27px;
+    height: 24px;
+    margin: -6px 1px 0 0;
+    background-position: -336px -345px;
+    vertical-align: top;
+}
+.sc-news .group-title .link-title::after{
+    content: '';
+    display: inline-block;
+    width: 7px;
+    height: 11px;
+    margin-left: 6px;
+    background-position: -444px -317px;
+    vertical-align: -1px;
 }
 
 .sc-news .group-title .sort-area{
     float: left;
+    margin-left: 10px;
 }
-.sc-news .group-title .btn-sort{}
-.sc-news .group-title .btn-sort.active{}
+.sc-news .group-title .btn-sort{
+    color: #505050;
+}
+.sc-news .group-title .btn-sort.active{
+    color: #000;
+    font-weight: bold;
+}
+.sc-news .group-title .btn-sort.active::before{
+    content: '';
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    margin: 0 8px 0 4px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background-color: #c7ccd1;
+    vertical-align: top;
+    vertical-align: 3px;
+}
 
 .sc-news .group-title .set-area{
     float: right;
@@ -85,26 +125,21 @@
     padding: 0 9px;
 }
 .sc-news .group-title .link-set.ic-list::after{
-    content:'';
+    content: '';
     display: inline-block;
-    width: 15px;
-    height: 15px;
-    background-position: 0 -419px;
+    width: 14px;
+    height: 13px;
+    background-position: -49px -419px;
     vertical-align: top;
     opacity: .7;
-    filter: alpha(opacity=70);
-    margin: -1px 0 1px;
 }
 .sc-news .group-title .link-set.ic-tile::after{
-    content:'';
+    content: '';
     display: inline-block;
-    width: 15px;
-    height: 15px;
-    background-position: 0 -419px;
+    width: 13px;
+    height: 13px;
+    background-position: -444px -19px;
     vertical-align: top;
-    opacity: .7;
-    filter: alpha(opacity=70);
-    margin: -1px 0 1px;
 }
 .sc-news .group-title .link-set.ic-set::after{
     content:'';
@@ -183,7 +218,29 @@
 .sc-news .hr-line.hr3{
     top: 195px;
 }
-
+.sc-news .pm-btn{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.sc-news .pm-btn.prev{
+    left: -27px;
+}
+.sc-news .pm-btn.next{
+    right: -27px;
+}
+.sc-news .pm-btn::after{
+    content: '';
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    background-position: 0 -299px;
+    background-repeat: no-repeat;
+    vertical-align: top;
+}
+.sc-news .pm-btn.next::after{
+    background-position: -224px -158px;
+}
 
 
 
@@ -234,16 +291,56 @@
 
 .sc-login .sub-area{
     margin: 14px 8px 0 4px;
+    color: #404040;
 }
 .sc-login .sub-area::after{content: '';clear: both;display: block;}
+.sc-login .sub-area .look-wrap{
+    float: left;
+    overflow: hidden;
+}
+.sc-login .sub-area a:hover{
+    text-decoration: underline;
+}
+.sc-login .sub-area .look-wrap::before{
+    content: '';
+    float: left;
+    display: inline-block;
+    width: 10px;
+    height: 14px;
+    margin: -1px 1px 1px;
+    background-position: -444px -98px;
+    vertical-align: top;
+}
+/* float속성 때무네 가상요소에도 float 적용 */
 .sc-login .sub-area .link-id{
     float: left;
 }
 .sc-login .sub-area .link-find{
     float: left;
 }
+.sc-login .sub-area .link-find::before{
+    content: '';
+    display: inline-block;
+    width: 3px;
+    height: 3px;
+    -webkit-border-radius: 50%;
+    background-color: #d7dce0;
+    border-radius: 50%;
+    vertical-align: top;
+    margin: 0 5px 0 2px;
+    vertical-align: 3px;
+}
 .sc-login .sub-area .link-join{
     float: right;
+}
+.sc-login .sub-area .link-join::before{
+    content: '';
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    background-position: -444px -129px;
+    vertical-align: top;
+    margin: 2px 5px 0 0;
 }
 
 .sc-cardnews{
@@ -263,11 +360,29 @@
 }
 .sc-cardnews .link-box .badge{
     float: left;
+    height: 18px;
+    padding: 0 7px;
+    margin-right: 8px;
+    border: 1px solid #202020;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    font-size: 11px;
+    line-height: 18px;
+    color: #202020;
+    font-weight: 700;
+    vertical-align: top;
 }
 .sc-cardnews .link-box .text{
     float: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+    font-size: 13px;
+    line-height: 20px;
+    color: #404040;
 }
-
+/* 말줄임표시 text-overflow:ellipsis, oh, wsnr */
 .sc-cardnews .navi{
     position: absolute;
     top: 11px;
@@ -295,7 +410,7 @@
     display: inline-block;
     width: 6px;
     height: 9px;
-    background-position: -408px -74px;
+    background-position: -451px -392px;
     vertical-align: top;
     content: '';
     margin: 7px 8px 6px;
