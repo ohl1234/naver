@@ -307,7 +307,9 @@
     display: inline-block;
     width: 10px;
     height: 14px;
-    margin: -1px 1px 1px;
+    margin: 0 3px 1px 1px;
+    /* margin: -1px 1px 1px; */
+    /* 네이버는 이렇게 */
     background-position: -444px -98px;
     vertical-align: top;
 }
@@ -327,7 +329,7 @@
     background-color: #d7dce0;
     border-radius: 50%;
     vertical-align: top;
-    margin: 0 5px 0 2px;
+    margin: 0 5px;
     vertical-align: 3px;
 }
 .sc-login .sub-area .link-join{
