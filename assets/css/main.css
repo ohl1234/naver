@@ -681,13 +681,13 @@
 /* list4 */
 
 .sc-themepost .group-list5{}
-.sc-themepost .group-list5 .title-area{
-    width: 100%;
+.sc-themepost .group-list5 .linktitle-area{
     padding-top: 24px;
+    line-height: 25px;
 }
 .sc-themepost .group-list5 .link-title{
-    line-height: 25px;
     font-size: 14px;
+    font-weight: bold;
     color: #000;
 }
 .sc-themepost .group-list5 .link-title::after{
@@ -701,9 +701,26 @@
     margin-left: 6px;
     vertical-align: 0;
 }
+.sc-themepost .funding-area{
+    position: relative;
+}
+.sc-themepost .funding-area .pm-btn{
+    position: absolute;
+    top: 82px; 
+    /* 40px + padding 18+ padddng 24 */
+    transform: translateY(-50%);
+}
+/* .sc-themepost .funding-area .pm-btn.prev{
+    left: -22px;
+    z-index: 10;
+}
+.sc-themepost .funding-area .pm-btn.next{
+    right: -13px;
+    z-index: 10;
+} */
+
 .sc-themepost .funding-list{
-    /* clear: both; */
-    padding: 20px 0;
+    padding: 18px 0 17px;
 }
 .sc-themepost .funding-list::after{content:'';clear: both;display: block;}
 .sc-themepost .funding-item{
