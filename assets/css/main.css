@@ -1297,6 +1297,9 @@
     height: 60px;
     border-radius: 4px;
 }
+.sc-shop .deal-thumb .thumb:hover img{
+    transform: none;
+}
 .sc-shop .deal-thumb .thumb + .thumb{
     position: relative;
     float: right;
