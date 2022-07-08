@@ -19,6 +19,7 @@ body{
 /* img border */
 .thumb-bd{
     display: block;
+    overflow: hidden;
     position: relative;
 }
 .thumb-bd img{
@@ -33,7 +34,24 @@ body{
     bottom: 0;
     border: 1px solid rgba(0,0,0,.1);
 }
-
+.thumb:hover img{
+    transform: scale(1.05);
+}
+.thumb-bd img{
+    width: 100%;
+    object-fit: cover;
+    transition: transform .2s cubic-bezier(.165,.84,.44,1);-webkit-transform :.2s cubic-bezier(.165,.84,.44,1);
+}
+.thumb .dim{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: .1;
+    filter: alpha(opacity=10);
+    background-color: #000;
+}
 
 
 /* 창고 공용 */
@@ -65,4 +83,57 @@ body{
     background-image: url(../images/sp-bg.png);
     background-repeat: no-repeat;
     background-size: 457px;
+}
+
+/* sc-shop bg 창고 */
+.sc-shop .group-title .link-shop::before,
+.sc-shop .group-title .link-shop::after,
+.sc-shop .shop-control .btn::before,
+.sc-shop .shop-page .btn::before
+{
+    background-image: url(../images/sp-shop-bg.png);
+    background-repeat: no-repeat;
+    background-size: 107px;
+}
+
+/* sc-shop prev next 공통 */
+.sc-shop .shop-control{
+    position: absolute;
+    top: 0;
+}
+.sc-shop .shop-control .num-box{
+    float: left;
+    line-height: 29px;
+    color: grey;
+}
+.sc-shop .shop-control .current{
+    margin-right: 4px;
+    color: #202020;
+    font-weight: 700;
+}
+.sc-shop .shop-control .btn-box{
+    overflow: hidden;
+    float: left;
+    margin-left: 7px;
+}
+.sc-shop .shop-control .btn{
+    float: left;
+    background-color: #fff;
+    border: 1px solid #dae1e6;
+}
+.sc-shop .shop-control .btn + .btn{
+    margin-left: -1px;
+}
+.sc-shop .shop-control .btn::before{
+    content: '';
+    display: inline-block;
+    width: 5px;
+    height: 9px;
+    background-position: -93px -77px;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    margin: 9px 12px 9px 10px;
+}
+.sc-shop .shop-control .btn.next::before{
+    background-position: -79px -77px;
 }
