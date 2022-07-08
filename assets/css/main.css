@@ -1040,7 +1040,9 @@
     float: left;
     line-height: 23px;
     color: #404040;
-
+}
+.sc-shop .link-mall:hover{
+    text-decoration: underline;
 }
 .sc-shop .mall-top .link-mall.dot:after,
 .sc-shop .mall-bottom .link-mall.dot:after{
@@ -1079,6 +1081,9 @@
 }
 .sc-shop .goods-wrap .info-content{
     margin-top: 5px;
+}
+.sc-shop .goods-wrap:hover .title{
+    text-decoration: underline;
 }
 .sc-shop .info-content .title{
     overflow: hidden;
@@ -1128,12 +1133,58 @@
 .sc-shop .shop-page .btn.next::before{
     background-position: -79px -77px;
 }
-
 /* group-goods */
-.sc-shop .group-event{
+
+.sc-shop .group-post{
     margin: 0 8px;
     padding: 19px 0 17px;
     border-top: 1px solid #e4e8eb;
 }
+.sc-shop .post-title{
+    position: relative;
+    padding-left: 5px
+}
+.sc-shop .post-title .title{
+    font-size: 13px;
+    font-weight: bold;
+}
+.sc-shop .post-title .shop-control{
+    position: absolute;
+    right: 0;
+    top: -6px;
+}
+.sc-shop .post-list{
+    margin: 13px 5px 0;
+    line-height: 28px;
+}
+.sc-shop .post-wrap{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+    color: #202020;
+}
+.sc-shop .post-wrap:hover > *{
+    text-decoration: underline;
+}
+.sc-shop .post-wrap::before{
+    background-color: #1ace61;
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    vertical-align: top;
+    content: '';
+    margin-right: 8px;
+    vertical-align: 2px;
+}
+.sc-shop .post-wrap .title{
+    margin-right: 13px;
+    font-weight: bold;
+    color: #000;
+}
+.sc-shop .post-wrap .desc{}
+
 .sc-shop .group-plus{}
 .sc-shop .group-plusdeal{}
