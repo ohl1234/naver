@@ -19,7 +19,6 @@ body{
 /* img border */
 .thumb-bd{
     display: block;
-    overflow: hidden;
     position: relative;
 }
 .thumb-bd img{
@@ -89,7 +88,10 @@ body{
 .sc-shop .group-title .link-shop::before,
 .sc-shop .group-title .link-shop::after,
 .sc-shop .shop-control .btn::before,
-.sc-shop .shop-page .btn::before
+.sc-shop .shop-page .btn::before,
+.sc-shop .deal-thumb .oneplus,
+.sc-shop .deal-thumb .thumb + div::before,
+.sc-shop .plusdeal-title a::before
 {
     background-image: url(../images/sp-shop-bg.png);
     background-repeat: no-repeat;
