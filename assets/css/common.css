@@ -78,7 +78,10 @@ body{
 .sc-login .sub-area .look-wrap::before,
 .sc-login .sub-area .link-id::before,
 .sc-login .sub-area .link-join::before,
-.sc-cardnews .btn-nav::after{
+.sc-cardnews .btn-nav::after,
+footer .link-sitemap::after,
+.btn-wrap .btn-mode,
+.btn-wrap .top::after{
     background-image: url(../images/sp-bg.png);
     background-repeat: no-repeat;
     background-size: 457px;
