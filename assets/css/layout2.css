@@ -392,6 +392,9 @@
     color: #242424;
     white-space: nowrap;
 }
+.footer .banner-wrap:hover .title{
+    text-decoration: underline;
+}
 .footer .banner-wrap .desc1,
 .footer .banner-wrap .desc2{
     overflow: hidden;
@@ -435,6 +438,9 @@
     content: '';
     clear: both;
     display: block;
+}
+.footer .aside-area a:hover{
+    text-decoration: underline;
 }
 .footer .aside-left{
     float: left;
@@ -510,6 +516,9 @@
 .footer .corp-area{
     padding-top: 25px;
 }
+.footer .corp-area a:hover{
+    text-decoration: underline;
+}
 .footer .corp-list{
     overflow: hidden;
     float: left;
@@ -529,6 +538,7 @@
     vertical-align: -1px;
 }
 .footer .corp-item strong{
+    font-weight: bold;
 }
 .footer .addr{
     float: left;

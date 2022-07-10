@@ -20,7 +20,7 @@ body{
     position: relative;
     display: block;
 }
-.thumb-bd::after{
+/* .thumb-bd::after{
     content: '';
     position: absolute;
     top: 0;
@@ -28,7 +28,7 @@ body{
     right: 0;
     bottom: 0;
     border: 1px solid rgba(0,0,0,.1);
-}
+} */
 .thumb-bd img{
     width: 100%;
 }
@@ -57,7 +57,18 @@ body{
 .header .btn-more::after,
 .header .degree-box .max::before,
 .footer .link-sitemap::after,
-.sc-news .issue-area .link-media::after{
+.sc-news .issue-area .link-media::after,
+.sc-news .link-title::before,
+.sc-news .link-title::after,
+.sc-news .link-set::after,
+.sc-themepost .list-area .btn-set::before,
+.sc-news .group-tile .btn::after,
+.sc-themepost .group-theme .btn::after,
+.sc-themepost .topstory-wrap .ic-play,
+.sc-themepost .media-wrap .ic-play,
+.sc-themepost .link-funding::after,
+.sc-themepost .funding-area .btn::after,
+.sc-themepost .btn-more::before{
     background-image: url(../images/sp-bg.png);
     background-repeat: no-repeat;
     background-size: 457px;
@@ -68,9 +79,3 @@ body{
 
 
 /* 쇼핑몰영역 prev next 공통 */
-
-
-/* footer 영역 a:hover text-decoration */
-.footer a:hover{
-    text-decoration: underline;
-}
