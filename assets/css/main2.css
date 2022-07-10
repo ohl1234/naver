@@ -1,0 +1,59 @@
+/* main 시작 */
+
+.column-left{
+    float: left;
+    width: 750px;
+}
+
+/* sc-news 시작 */
+
+.sc-news{
+    margin-top: 12px;
+}
+.sc-news .group-issue{
+    padding: 12px 15px 11px 15px;
+    background-color: #f7f9fa;
+    border: 1px solid #dae1e6;
+    line-height: 24px;
+}
+.sc-news .group-issue::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+.sc-news .issue-area{
+    float: left;
+}
+.sc-news .issue-area .link-media{
+    font-weight: bold;
+    float: left;
+}
+.sc-news .issue-area .link-media::after{
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 10px;
+    background-position: -444px -380px;
+    margin: 0 5px;
+}
+.sc-news .issue-area .link-issue{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+    width: 310px;
+    font-size: 13px;
+}
+.sc-news .direct-area{
+    float: right;
+}
+.sc-news .link-news
+.sc-news .group-title{
+}
+.sc-news .content{}
+/* sc-news 끝 */
+.column-right{
+    float: right;
+    width: 350px;
+}
+/* main 끝 */
