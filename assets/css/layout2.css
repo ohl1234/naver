@@ -4,8 +4,6 @@
 
 /* header 시작 */
 
-.header{}
-
 /* group-flex1 시작 */
 .header .group-flex1{
     position: relative;
@@ -343,7 +341,6 @@
     background-color: #fafbfc;
     border-bottom: 1px solid #e4e8eb;
 }
-.footer .banner-list{}
 .footer .banner-list::after{
     content: '';
     clear: both;
@@ -413,6 +410,9 @@
 }
 .footer .notice-area > *{
     font-weight: bold;
+}
+.footer .notice-area a:hover{
+    text-decoration: underline;
 }
 .footer .notice-area .title{
     float: left;

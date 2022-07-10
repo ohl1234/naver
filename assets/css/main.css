@@ -1212,12 +1212,21 @@
     left: 5px; */
     overflow: hidden;
 }
+.sc-shop .plus-tab .tab-leisure .dot{
+    width: 2px;
+    height: 2px;
+    display: inline-block;
+    margin: 0 2px;
+    background-color: rgba(32,32,32,.8);
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    vertical-align: 4px;
+}
 .sc-shop .plus-tab a{
     padding: 0 1px;
     border-bottom: 2px solid transparent;
     color: #202020;
     font-size: 13px;
-    font-weight: bold;
 }
 .sc-shop .plus-tab a + a{
     margin-left: 11px;
@@ -1225,6 +1234,7 @@
 .sc-shop .tab-life.active{
     border-color: #19ce60;
     color: #03c75a;
+    font-weight: bold;
 }
 .sc-shop .group-plus .shop-control{
     right: 0;
