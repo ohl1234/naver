@@ -1052,10 +1052,21 @@
     background-color: #c9cccf;
     width: 3px;
     height: 3px;
-    margin: 10px 12px 0;
     -webkit-border-radius: 50%;
     border-radius: 50%;
     vertical-align: top;
+}
+.sc-shop .mall-top .link-mall.lr12:after{
+    margin: 10px 12px 0;
+}
+.sc-shop .mall-top .link-mall.lr13:after{
+    margin: 10px 13px 0;
+}
+.sc-shop .mall-bottom .link-mall.lr11:after{
+    margin: 10px 11px 0;
+}
+.sc-shop .mall-bottom .link-mall.lr10:after{
+    margin: 10px 10px 0;
 }
 /* group-mall */
 

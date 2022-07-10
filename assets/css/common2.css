@@ -1,0 +1,57 @@
+body{
+    font-size: 12px;
+    line-height: 16px;
+    color: #202020;
+    font-family: -apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif;
+}
+
+.blind{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    clip: rect(0,0,0,0);
+    overflow: hidden;
+    margin: -1px;
+}
+
+/* img border & dim */
+.thumb-bd{
+    position: absolute;
+    display: block;
+}
+.thumb-bd::after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid rgba(0,0,0,.1);
+}
+.thumb-bd img{
+    width: 100%;
+}
+.thumb-bd .dim{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: .1;
+    filter: alpha(opacity=10);
+    background-color: #000;
+}
+
+
+/* img창고1 */
+
+
+
+/* 날씨영역 img창고 */
+
+
+
+/* 쇼핑몰영역 img창고 */
+
+
+
+/* 쇼핑몰영역 prev next 공통 */
