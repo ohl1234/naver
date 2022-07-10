@@ -962,6 +962,7 @@
 /* sc-shop */
 .sc-shop{
     margin-top: 15px;
+    letter-spacing: -.25px;
 }
 .sc-shop .group-title{
     overflow: hidden;
