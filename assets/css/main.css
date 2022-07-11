@@ -1223,6 +1223,7 @@
     vertical-align: 4px;
 }
 .sc-shop .plus-tab a{
+    float: left;
     padding: 0 1px;
     border-bottom: 2px solid transparent;
     color: #202020;
@@ -1302,6 +1303,9 @@
 }
 .sc-shop .plusdeal-wrap{
     display: block;
+}
+.sc-shop .plusdeal-wrap:hover .title{
+    text-decoration: underline;
 }
 .sc-shop .plusdeal-wrap::after{content: '';clear: both;display: block;}
 .sc-shop .deal-thumb{
